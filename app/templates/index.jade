@@ -1,0 +1,15 @@
+doctype html
+
+html
+  head
+    title= 'Playground/ Video-Sync'
+    link(rel='shortcut icon' href='')
+  body
+    main#playground
+      video(id='screensaver' autoplay loop)
+        source(src='videos/sample.mov' type='video/mp4')
+    footer
+      button(id='toggle')= 'Play/Pause'
+      button(id='stop')= 'Stop'
+      button(id='seek')= 'Random Seek'
+    script(src='/javascripts/main.js')

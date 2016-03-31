@@ -1,0 +1,8 @@
+.publish
+bower_components
+node_modules
+dist
+docs
+lib
+public
+npm-debug*

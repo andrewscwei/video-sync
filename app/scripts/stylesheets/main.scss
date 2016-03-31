@@ -1,0 +1,34 @@
+
+@import '~minuet/lib/sass/minuet';
+
+main#playground {
+  @include size(100%);
+  @include overflow(hidden);
+
+  video {
+    @include cover-video();
+  }
+}
+
+footer {
+  @include align('left', 'bottom', 'fixed');
+  @include flex-block();
+  @include size(100% 60px);
+  background: rgba(#111, .6);
+
+  @include buttons() {
+    @include padding(5px 10px);
+    background: #000;
+    border-radius: 4px;
+    color: #fff;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    @include state('hover') {
+      background: #fff;
+      color: #111;
+    }
+  }
+}

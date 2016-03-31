@@ -10,7 +10,7 @@ const modulesDir = path.join(__dirname, 'node_modules');
 module.exports = {
   cache: true,
   debug: true,
-  devtool: 'eval',
+  devtool: 'eval-source-map',
   context: path.join(sourceDir, 'scripts'),
   entry: {
     main: './main.js'

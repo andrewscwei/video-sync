@@ -47,5 +47,10 @@ module.exports = {
     modulesDirectories: [
       modulesDir
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      WEBSOCKET_URL: JSON.stringify('ws://localhost:1337')
+    })
+  ]
 }
